@@ -8,6 +8,9 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname,'public','index.html'));
 });
 
+app.get('/sobre',(req,res)=>{
+  res.sendFile(path.join(__dirname,'public','sobre.html'));
+})
 
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
